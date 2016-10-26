@@ -1,0 +1,7 @@
+<h1><%= @message %></h1>
+<h2><%= @subtitle %></h2>
+<ul>
+  <% @things_that_suck.each do |thing| %>
+  <li><%=link_to thing, marketing_path(thing: thing) %></li>
+  <% end %>
+</ul>
